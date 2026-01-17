@@ -4,7 +4,7 @@
 
 // const PORT = 3000;
 
-// mongoose.connect("mongodb+srv://harshmarthak63_db_user:iRFmHS88RnLOG269@cluster0.ktovmdy.mongodb.net/?appName=Cluster0")
+// mongoose.connect("MONGO_URI")
 //     .then(() => console.log("mongo connected"))
 //     .catch(err => console.error(err));
 
@@ -53,7 +53,7 @@ app.use(express.json());
 
 mongoose
   .connect(
-    "mongodb+srv://harshmarthak63_db_user:iRFmHS88RnLOG269@cluster0.ktovmdy.mongodb.net/?appName=Cluster0"
+    "MONGO_URI"
   )
   .then(() => {
     console.log("✅ MongoDB Atlas connected");
